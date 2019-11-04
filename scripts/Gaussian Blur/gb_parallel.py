@@ -7,7 +7,7 @@ import datetime
 
 a = datetime.datetime.now()
 pymp.config.nested = True
-face = misc.imread('./images/image25.pgm')
+face = misc.imread('../../images/image25.pgm')
 print (face.shape)
 convx = array([[1/16, 2/16, 1/16],
 	  [2/16, 4/16, 2/16],
@@ -36,7 +36,7 @@ with pymp.Parallel(2) as p1:
 
 
 img = Image.fromarray(res)
-img.save('./outputs/gbp.png')
+img.save('../../outputs/gbp.png')
 img.show()
 b = datetime.datetime.now()
 print("Total time of execution: ",b-a)

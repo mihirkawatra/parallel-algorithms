@@ -10,7 +10,7 @@ GRAYLEVEL   =    256
 MAX_FILENAME  =  256
 MAX_BUFFERSIZE = 256
 
-face = misc.imread('./images/mandrill.pgm')
+face = misc.imread('../../images/mandrill.pgm')
 image1=face
 image2=face
 print (face.shape)
@@ -71,5 +71,5 @@ otsu_th()
 b = datetime.datetime.now()
 print("Time: "+str(b-a))
 img = Image.fromarray(image2)
-img.save('./outputs/otsu_serial.png')
+img.save('../../outputs/otsu_serial.png')
 img.show()

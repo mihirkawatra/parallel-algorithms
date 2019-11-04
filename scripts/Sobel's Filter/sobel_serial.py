@@ -8,7 +8,7 @@ import math
 
 a = datetime.datetime.now()
 pymp.config.nested = True
-face = misc.imread('./images/pepper.pgm')
+face = misc.imread('../../images/pepper.pgm')
 print (face.shape)
 convx = array([[-1, 0, 1],
 	  [-2, 0, 2],
@@ -65,7 +65,7 @@ for i in range(0,l):
 
 
 img = Image.fromarray(res2)
-img.save('./outputs/sobel_serial.png')
+img.save('../../outputs/sobel_serial.png')
 img.show()
 
 b = datetime.datetime.now()

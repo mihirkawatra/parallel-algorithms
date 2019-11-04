@@ -11,7 +11,7 @@ GRAYLEVEL   =    256
 MAX_FILENAME  =  256
 MAX_BUFFERSIZE = 256
 
-face = misc.imread('./images/mandrill.pgm')
+face = misc.imread('../../images/mandrill.pgm')
 pymp.config.nested = True
 image1=face
 #image2=face
@@ -79,5 +79,5 @@ otsu_th()
 b = datetime.datetime.now()
 print("Time: "+str(b-a))
 img = Image.fromarray(image2)
-img.save('./outputs/otsu_parallel.png')
+img.save('../../outputs/otsu_parallel.png')
 img.show()
